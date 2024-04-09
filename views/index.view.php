@@ -1,5 +1,6 @@
 <?php
 session_start();
+include './services/users.service.php';
 $_SESSION['cargo'] = '';
 $errors = isset($_SESSION['errors']) ? $_SESSION['errors'] : "";
 
@@ -16,6 +17,7 @@ if (isset($_POST["nome"])) {
         $errors = "Usuario não econtrado";
         $_SESSION['cargo'] = '';
     }
+    print_r($usuario);
 }
 ?>
 
@@ -44,35 +46,12 @@ if (isset($_POST["nome"])) {
     </section>
 
     <section class="flex items-center justify-center">
-        <form action="" method="POST" class="w-full flex flex-col gap-4 max-w-sm">
-            <h2 class="title">Sing in</h2>
-
-            <div class="space-y-2">
-                <label for="nome">nome:</label>
-                <input type="text" name="nome" id="nome" class="input" required />
-            </div>
-            <div class="space-y-2">
-                <label for="senha">Senha:</label>
-                <input type="password" name="senha" id="senha" class="input" required />
-            </div>
-            <?php if ($errors):
-                ; ?>
-            <div class="alert">
-                <?php echo $errors; ?>
-            </div>
-            <?php endif; ?>
-            <button type="submit" class="button is-info is-dark w-full border">
-                entrar
-            </button>
-        </form>
-
-
-
+        <?php include './components/form-login.view.php' ?>
     </section>
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-    lucide.createIcons();
+    lucide.c     reateIcons();
     </script>
 </body>
 
