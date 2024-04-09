@@ -3,7 +3,7 @@
         <h2 class="font-semibold text-lg uppercase flex gap-1">
             <span>pizzaria</span> <i data-lucide="pizza"></i>
         </h2>
-        <a class="button is-danger is-dark" href="/index.html">
+        <a class="button is-danger is-dark" href="./index.php">
             <i data-lucide="log-out"></i>
             <span class="ml-1">Sair</span>
         </a>

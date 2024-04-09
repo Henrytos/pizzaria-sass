@@ -34,9 +34,15 @@ try {
 
     function all_requests($conexion)
     {
-        $sql = "SELECT * FROM pedididos";
+        $sql = "SELECT * FROM pedididos a INNER JOIN endereco b ON a.endereco_id = b.id";
         $rows = $conexion->query($sql);
-        return $rows->fetch_assoc();
+        return $rows->fetch_all(MYSQLI_ASSOC);
+    }
+    function query_adress($id, $conexion)
+    {
+        $sql = "SELECT * FROM endereco WHERE id = $id";
+        $row = $conexion->query($sql);
+        return $row->fetch_assoc();
     }
 
 
