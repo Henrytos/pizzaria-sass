@@ -30,9 +30,9 @@ if (isset($_POST["nome"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizzaria</title>
     <!-- bulma -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" />
     <!-- tailwind -->
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="min-h-screen grid grid-cols-2 antialised">
@@ -57,9 +57,9 @@ if (isset($_POST["nome"])) {
             </div>
             <?php if ($errors):
                 ; ?>
-                <div class="alert">
-                    <?php echo $errors; ?>
-                </div>
+            <div class="alert">
+                <?php echo $errors; ?>
+            </div>
             <?php endif; ?>
             <button type="submit" class="button is-info is-dark w-full border">
                 entrar
@@ -70,9 +70,9 @@ if (isset($_POST["nome"])) {
 
     </section>
 
-    <!-- <script src="https://unpkg.com/lucide@latest"></script> -->
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-        // lucide.createIcons();
+    lucide.createIcons();
     </script>
 </body>
 
