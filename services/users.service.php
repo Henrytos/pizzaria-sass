@@ -22,7 +22,6 @@ function find_by_user($usename, $password, $conexion)
     } else {
         return false;
     }
-
 }
 
 ?>

@@ -5,7 +5,8 @@ require './database/conexion.php';
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR" class="dark">
+
 
 <head>
     <meta charset="UTF-8" />
@@ -26,7 +27,7 @@ require './database/conexion.php';
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-        lucide.createIcons();
+    lucide.createIcons();
     </script>
 </body>
 

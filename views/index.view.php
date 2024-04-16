@@ -12,6 +12,7 @@ if (isset($_POST["nome"])) {
 
     if ($usuario) {
         $_SESSION['cargo'] = $usuario['cargo'];
+        $_SESSION['user'] = $usuario;
         header("Location: validate.php");
     } else {
         $errors = "Usuario não econtrado";
@@ -25,7 +26,7 @@ if (isset($_POST["nome"])) {
 
 
 
-<html lang="en">
+<html lang="pt_BR" class="dark">
 
 <head>
     <meta charset="UTF-8" />
@@ -37,7 +38,7 @@ if (isset($_POST["nome"])) {
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="min-h-screen grid grid-cols-2 antialised">
+<body class="min-h-screen grid grid-cols-2 antialised ">
     <section class="border-r border-zinc-800 flex flex-col justify-between p-4 text-zinc-400">
         <h2 class="font-semibold text-lg uppercase flex gap-1">
             <span>pizzaria</span> <i data-lucide="pizza"></i>
@@ -51,7 +52,7 @@ if (isset($_POST["nome"])) {
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-    lucide.c     reateIcons();
+        lucide.createIcons();
     </script>
 </body>
 

@@ -6,7 +6,8 @@ include './database/conexion.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR" class="dark">
+
 
 <head>
     <meta charset="UTF-8" />
