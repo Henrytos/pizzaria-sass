@@ -1,0 +1,6 @@
+#home{
+  background-position: center left;
+  background-size: cover;
+  background-image: url('../imgs/bg-login.jpg');
+  background-color: black;
+}

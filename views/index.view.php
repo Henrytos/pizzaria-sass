@@ -36,14 +36,19 @@ if (isset($_POST["nome"])) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" />
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="./assets/styles/index.style.css">
 </head>
 
 <body class="min-h-screen grid grid-cols-2 antialised ">
-    <section class="border-r border-zinc-800 flex flex-col justify-between p-4 text-zinc-400">
+    <section class="border-r border-zinc-800  text-zinc-400 " id="home">
+        <div class="w-full h-full flex flex-col justify-between p-4 bg-black/50">
         <h2 class="font-semibold text-lg uppercase flex gap-1">
             <span>pizzaria</span> <i data-lucide="pizza"></i>
         </h2>
         <span class="text-sm">Diretios de Henry 2024 &copy; </span>
+    
+        </div>
     </section>
 
     <section class="flex items-center justify-center">
